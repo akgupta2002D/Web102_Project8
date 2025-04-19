@@ -1,0 +1,44 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 15%;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333; /* Light gray background */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fix the sidebar to the left */
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the content to the right of the sidebar takes the remaining space */
+.main-content {
+    margin-left: 15%; /* Matches the width of the sidebar */
+    width: 85%; /* Remaining width */
+    padding: 20px;
+}
